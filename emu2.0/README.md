@@ -36,8 +36,8 @@ The ROM provided is 3840 bytes but actually only the first `0x350` are used.
 
 ## Implementation
 
-The code is implemented in `vm.cpp` and contains a `main()` method that loads
-the ROM from standard input. The rest of the implementation is in the `VM`
+The code is implemented in `milkvm.cpp` and contains a `main()` method that
+loads the ROM from standard input. The rest of the implementation is in the `VM`
 class since it was unclear how complex it would get when starting.
 
 When ran it will dump it's "assembly" to standard error and the serial output
