@@ -1,13 +1,21 @@
 
 # Emu 2.0
 
-> Hey! We have found this old cartridge under a desk in the library of Lapland. It appears to be for a system called "Emu 2.0", made back in 1978. These systems don't get produced anymore, and we can't seem to find anyone that owns one.
+> Hey! We have found this old cartridge under a desk in the library of Lapland.
+> It appears to be for a system called "Emu 2.0", made back in 1978. These
+> systems don't get produced anymore, and we can't seem to find anyone that owns
+> one.
 >
-> Thankfully we have the documentation for it, so maybe we can use it to write an emulator and see what this ROM does?
+> Thankfully we have the documentation for it, so maybe we can use it to write
+> an emulator and see what this ROM does?
 
 ![Description](screenshot.png)
 
-Original URL: `https://drive.google.com/drive/folders/1O2cPJq56G0APoBIAOhXuxJsXE11WCmu-?usp=sharing` (see `./files` for mirror)
+| Asset        | Note                                                          |
+|--------------|---------------------------------------------------------------|
+| Author       | Milkdrop                                                      |
+| Category     | Emulation                                                     |
+| Attachment   | 💾 [Cached][1] 💾 [Original Link][2]                          |
 
 ## Analysis
 
@@ -51,3 +59,6 @@ X-MAS{S4nt4_U5e5_An_Emu_2.0_M4ch1n3}
 * Assembly syntax printed is garbage
 * Wanted to execute until the `X-MAS{...}` flag format was found but settled for
   just letting it run and killing it. Thankfully it ends with `jmp $0408` loop
+
+[1]: ./files/
+[2]: https://drive.google.com/drive/folders/1O2cPJq56G0APoBIAOhXuxJsXE11WCmu-?usp=sharing
