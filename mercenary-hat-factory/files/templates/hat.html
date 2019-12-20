@@ -1,0 +1,13 @@
+<head>
+	<link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+</head>
+
+<body>
+	{% include 'navigation.html' %}
+	<div class="container" style="text-align:center">
+		<img class="hat" src="/static/img/hats/{{ hat }}.png">
+		<h1>You are viewing:<br><span style="color:#FFA144;">{{ hatName|safe }}</span></h1>
+	</div>
+</body>
+
+<script src="/static/js/snow.js"></script>

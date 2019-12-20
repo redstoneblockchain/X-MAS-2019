@@ -1,0 +1,59 @@
+body {
+	background: url("/static/img/bg.jpg");
+	color: white;
+	margin: 0;
+	font-family: Arial;
+}
+
+.container {
+	margin: 15px;
+}
+
+.navbar {
+	background-color: rgb(48, 48, 48);
+	padding: 5px;
+	text-align: right;
+}
+
+.navbar a {
+	color: white;
+	margin-left: 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	transition: color 0.1s ease-in-out;
+}
+
+.navbar a:hover {
+	color: #A1FF44;
+}
+
+.snow {
+	position: absolute;
+	cursor: default;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+input {
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+
+.companion {
+	position: absolute;
+	bottom: 0;
+	right: 15px;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+.hat {
+	width: 256px;
+	background-color: rgba(100, 100, 100, 0.9);
+	border-radius: 25px;
+	padding: 15px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

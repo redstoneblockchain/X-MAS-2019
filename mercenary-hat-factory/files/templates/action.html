@@ -1,0 +1,17 @@
+<head>
+	<link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+</head>
+
+<body>
+	{% include 'navigation.html' %}
+	<div class="container">
+		<h1>Action: {{ action }}</h1>
+		
+		<form action="/{{ action }}" method="post">
+			<input placeholder="Username" type="text" name="user"><br>
+			<input placeholder="Password" type="password" name="pass"><br>
+			<input type="submit" value="{{ action }}">
+		</form>
+	</div>
+	<script src="/static/js/snow.js"></script>
+</body>

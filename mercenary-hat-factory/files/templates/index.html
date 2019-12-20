@@ -1,0 +1,29 @@
+<head>
+	<link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+</head>
+
+<body>
+	{% include 'navigation.html' %}
+	<div class="container">
+		{% if loggedIn %}
+			<h1>Welcome <span style="color: #A1FF44">{{ user }}</span>!</h1>
+			{% if admin %}
+				{% if authorized %}
+					<div>You are a Level 2 factory administrator. You may now test and create new hats. You can now oversee the factory workers:<br><br>
+					<iframe width="879" height="468" src="https://www.youtube.com/embed/QDCPKBF7a1Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<br><br>
+					<form action="/makehat" method="get">
+						<input placeholder="Hat Name" type="text" name="hatName"><br>
+					<input type="submit" value="Make Hat!">
+					</form> 
+				{% else %}
+					<div>You are a Level 1 factory administrator. Here is your factory jam:<br><br>
+					<iframe width="879" height="468" src="https://www.youtube.com/embed/aj1yZ19WuM0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				{% endif %}
+				</div>
+				<img class="companion" src="/static/img/balloonicorn.png">
+			{% endif %}
+		{% endif %}
+	</div>
+	<script src="/static/js/snow.js"></script>
+</body>

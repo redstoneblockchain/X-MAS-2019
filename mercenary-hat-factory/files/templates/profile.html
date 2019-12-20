@@ -1,0 +1,13 @@
+<head>
+	<link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+</head>
+
+<body>
+	{% include 'navigation.html' %}
+	<div class="container">
+		{% if loggedIn %}
+			<h1>Welcome {{ user }}</h1>
+		{% endif %}
+	</div>
+	<script src="/static/js/snow.js"></script>
+</body>
