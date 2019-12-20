@@ -14,7 +14,7 @@
 | Asset        | Note                                                          |
 |--------------|---------------------------------------------------------------|
 | Author       | Milkdrop                                                      |
-| Category     | PPC                                                           |
+| Category     | Web Exploitation                                              |
 | Original URL | `http://challs.xmas.htsp.ro:11003`                            |
 | Attachment   | 💾 [HTML Dump][1]                                             |
 
@@ -102,3 +102,5 @@ character of the secret flag:
 [Thu Dec 19 03:45:51 2019] 1.2.3.4:52304 [200]: /X-MAS%7BXSS--St4llm4n-Appr0ved!
 [Thu Dec 19 03:49:56 2019] 1.2.3.4:52406 [200]: /X-MAS%7BXSS--St4llm4n-Appr0ved!%7D
 ```
+
+[1]: ./files/index.html
