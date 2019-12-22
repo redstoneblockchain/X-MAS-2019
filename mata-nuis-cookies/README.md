@@ -3,8 +3,6 @@
 > Well... Mata Nui said something about his beloved cookies, but I've never seen this language before.
 >
 > _Note: Please add brackets { } manually to the flag string. Flag is also uppercase._
->
-> *link to attachment*
 
 ![Screenshot](screenshot.png)
 
@@ -69,8 +67,8 @@ This was a fun challenge to start the competition with, and it also provided a g
 
 [3]: https://web.archive.org/web/20191222121059/https://www.eurobricks.com/forum/index.php?/forums/topic/48973-review-8573-nuhvok-kal/
 [4]: files/chall.png
-[5]: files/colored.png
-[6]: files/step1.png
-[7]: files/step2.png
-[8]: files/step3.png
-[9]: files/done.png
+[5]: colored.png
+[6]: step1.png
+[7]: step2.png
+[8]: step3.png
+[9]: done.png
