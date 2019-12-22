@@ -47,7 +47,7 @@ My first thought was that you only get told certain values, and the remaining on
 So, let's do just that: `yes 0 | nc challs.xmas.htsp.ro 13005`.  
 We answer `0` to every question, and the answer is either `Good!` (`0` is correct) or `Pretty close, but wrong!` (i.e. the correct answer is `1`).
 
-For some reason it takes quite a few tries for that to actually run to completion. I don't know if it's a problem with the tools I'm using (`nc`) or their server. Doesn't matter for obtaining the flag though, eventually you get a full set of 961 answers. See `out.txt` for such an output.
+For some reason it takes quite a few tries for that to actually run to completion. I don't know if it's a problem with the tools I'm using (`nc`) or their server. Doesn't matter for obtaining the flag though, eventually you get a full set of 961 answers. See [`out.txt`][1] for such an output.
 
 ### Let's plot that.
 
@@ -89,7 +89,7 @@ That's right. I'm not in the mood for writing a program to place bits into a 31 
  6. Remove everything that is not an answer bit. `.*=` -> _nothing_
  7. Remove all newlines. `\r\n` -> _nothing_
 
-We now have a flattened blob of all the answers (see `blob.txt`). You can use a regex with quantifiers to bring this into lines again, but it's time for my favorite cryptogram solving technique: **Change the width of the Notepad++ window until the data aligns** (i.e. until each line is 31 characters in this case).
+We now have a flattened blob of all the answers (see [`blob.txt`][2]). You can use a regex with quantifiers to bring this into lines again, but it's time for my favorite cryptogram solving technique: **Change the width of the Notepad++ window until the data aligns** (i.e. until each line is 31 characters in this case).
 
 ![The data in lines of 31 columns][3]
 
@@ -101,5 +101,7 @@ Surprise, it's a QR code! One of my teammates thankfully found a binary string Q
 
 `X-MAS{Th@t's_4_w31rD_fUnCt10n!!!_8082838205}`
 
+[1]: out.txt
+[2]: blob.txt
 [3]: blob31.PNG
 [4]: qr.PNG
