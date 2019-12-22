@@ -1,4 +1,24 @@
+# Santa's Cookie Maleficarium
 
+> What evil secrets is Santa hiding behind his cookie baking obsession?
+> And what's up with all those jars? Maybe he's trying to summon an evil Norse god?
+> 
+> Find out by exploring what the functions of his Maleficarium are.
+>
+> _Note: Flag should be submitted in standard format, replace "dash" with "-" and "brace" with "{" or "}" accordingly_
+
+![Screenshot](screenshot.png)
+
+| Asset        | Note                                                          |
+|--------------|---------------------------------------------------------------|
+| Author       | Gabies                                                        |
+| Category     | Cryptography                                                  |
+| Original URL | `nc challs.xmas.htsp.ro 13012`                                |
+| Attachment   | 💾 [Cached][1] 💾 [Original Link][2]                          |
+| Writeup by   | Max                                                           |
+
+[1]: files/chall_stripped
+[2]: https://drive.google.com/file/d/1RPwRlm2srH9G93BXmaIR5WJ7oaEyQBDf/view
 
 ---
 
