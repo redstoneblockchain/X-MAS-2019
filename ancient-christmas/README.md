@@ -73,7 +73,7 @@ Assuming that the warping (and JPEG compression) don't mangle the symbols too
 hard, this challenge is easily solved by counting the number of white patches
 in a given symbol to determine which symbol it is.
 
-In image processing (which is essentially my day job) this is called [Connected-
+In image processing (which is essentially my day job) this is called [Connected-\
 component Labeling][3], and a function for this should be available in any
 mature image processing library. Python surely has those, but none of them
 were installed on my system. In fact, Kali doesn't even come with `pip` for
@@ -81,6 +81,9 @@ some reason. Since my "Linux adult" Kris was fast asleep on the other side of
 the world and I remembered the amount of python reinstallations working with
 Tensorflow in a different project entailed, I decided to not mess with my
 python installation and instead write a connected component function by hand.
+(Yes, I can hear the facepalms from here, but there was a "crystal clear, fun"
+path and a "unknown amount of unfun garbage" path, so I chose the former. If
+I didn't enjoy writing this stuff I wouldn't have come to this category.)
 
 Implementing that using floodfills (i.e. graph traversal) allowed me to also
 tailor the algorithm to exactly what I needed. The algorithm was thus:
@@ -164,5 +167,5 @@ bed) but were blocked by the server bug. So we probably didn't formally
 deserve the first blood, but we did do our best to get it.
 
 [3]: https://en.wikipedia.org/wiki/Connected-component_labeling
-[4]: ./ancientChristmas.py
+[4]: ./demangler.py
 [5]: https://github.com/kazuho/picohash
