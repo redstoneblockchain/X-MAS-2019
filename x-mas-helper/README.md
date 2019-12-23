@@ -12,17 +12,16 @@
 >
 > Code:
 > ```
-if (message.content == "!flag"):
-ok = False
-for role in message.author.roles:
-if (role.name == "Organizer"):
-ok = True
-if (ok):
-printer = "The flag is: **{}**".format (FLAG)
-else:
-printer = "Unauthorized."
-```
->
+> if (message.content == "!flag"):
+> ok = False
+> for role in message.author.roles:
+> if (role.name == "Organizer"):
+> ok = True
+> if (ok):
+> printer = "The flag is: **{}**".format (FLAG)
+> else:
+> printer = "Unauthorized."
+> ```
 
 ![Screenshot](screenshot.png)
 
@@ -31,6 +30,20 @@ printer = "Unauthorized."
 | Author | Milkdrop                                                            |
 
 ## Analysis
+
+The code again, but properly indented:
+
+```
+ if (message.content == "!flag"):
+   ok = False
+ for role in message.author.roles:
+   if (role.name == "Organizer"):
+     ok = True
+ if (ok):
+   printer = "The flag is: **{}**".format (FLAG)
+ else:
+   printer = "Unauthorized."
+```
 
 Invite discord bot to your server. Get OAuth Client ID using Developer Tools.
 
