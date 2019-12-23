@@ -139,7 +139,7 @@ Some further notes:
 - The POW when implemented the trivial way in python would occasionally take
   a minute or more, which can become really frustrating. After trying a
   multithreaded python solution, Kris eventually produced a really nice
-  multithreaded C binary (using [picohash][5]) that would usually complete the
+  multithreaded C binary (using [PicoSHA2][5]) that would usually complete the
   POW in seconds. We benefitted from this greatly for the subsequent challenges.
 
 - We couldn't get past round 6. Ignoring the times I got the answer wrong
@@ -168,4 +168,4 @@ deserve the first blood, but we did do our best to get it.
 
 [3]: https://en.wikipedia.org/wiki/Connected-component_labeling
 [4]: ./demangler.py
-[5]: https://github.com/kazuho/picohash
+[5]: https://github.com/okdshin/PicoSHA2
