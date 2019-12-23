@@ -1,0 +1,23 @@
+int mead
+
+flag = ...
+
+void frobnicate(xor, offset, lvl)
+	mead = (xor + offset) / 2
+
+	if (xor + 1 < offset)
+		print((flag[mead] - '0') ^ 42)
+		print("/")
+		if (lvl == 3)
+			mead = 8
+		
+		frobnicate(xor, mead, lvl+1)
+		frobnicate(mead+1, offset, lvl+1)
+
+
+int main()
+	frobnicate(0, length(flag), 0.0)
+	print(0)
+
+
+47/22/9/55/-41/59/39/97/-38/-38/108/42/41/-47/-46/-38/-38/22/46/110/22/46/23/20/45/46/47/20/-45/46/103/0
