@@ -73,9 +73,9 @@ Assuming that the warping (and JPEG compression) don't mangle the symbols too
 hard, this challenge is easily solved by counting the number of white patches
 in a given symbol to determine which symbol it is.
 
-In image processing (which is essentially my day job) this is called [Connected-\
-component Labeling][3], and a function for this should be available in any
-mature image processing library. Python surely has those, but none of them
+In image processing (which is essentially my day job) this is called
+[Connected-component Labeling][3], and a function for this should be available in
+any mature image processing library. Python surely has those, but none of them
 were installed on my system. In fact, Kali doesn't even come with `pip` for
 some reason. Since my "Linux adult" Kris was fast asleep on the other side of
 the world and I remembered the amount of python reinstallations working with
@@ -139,8 +139,9 @@ Some further notes:
 - The POW when implemented the trivial way in python would occasionally take
   a minute or more, which can become really frustrating. After trying a
   multithreaded python solution, Kris eventually produced a really nice
-  multithreaded C binary (using [PicoSHA2][5]) that would usually complete the
-  POW in seconds. We benefitted from this greatly for the subsequent challenges.
+  multithreaded C++ version (find it [here][6]) that would usually complete
+  the POW in seconds. We benefitted from this greatly for the subsequent
+  challenges.
 
 - We couldn't get past round 6. Ignoring the times I got the answer wrong
   (which involved a distinct server message) the connection would always die
@@ -169,3 +170,4 @@ deserve the first blood, but we did do our best to get it.
 [3]: https://en.wikipedia.org/wiki/Connected-component_labeling
 [4]: ./demangler.py
 [5]: https://github.com/okdshin/PicoSHA2
+[6]: https://github.com/krisives/shapow
